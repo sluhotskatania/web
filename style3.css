@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    /* margin-bottom: 5px;
+    border-radius: 5px; */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 300px;
+}
+
+li:nth-child(odd) {
+    background-color: #aed9ea; 
+}
+
+li:nth-child(even) {
+    background-color: #86b3cf; 
+}
+
+li.checked {
+    background-color: #d3d3d3; 
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.cross {
+    color: red;
+    font-size: 20px;
+    margin: auto;
+}

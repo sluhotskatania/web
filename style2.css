@@ -1,0 +1,38 @@
+ol{
+list-style: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    background-image: url('C:/Users/Таня/Downloads/images (1)/images/arrow-right_16.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+li1{
+    background-image: url('C:/Users/Таня/Downloads/images (1)/images/snowflake_16.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+li2{
+    background-image: url('C:/Users/Таня/Downloads/images (1)/images/leaf_g_16.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+li3{
+    background-image: url('C:/Users/Таня/Downloads/images (1)/images/sun_16.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+li4{
+    background-image: url('C:/Users/Таня/Downloads/images (1)/images/leaf_y_16.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
