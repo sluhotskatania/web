@@ -1,0 +1,104 @@
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+th {
+  border-spacing: 0px;
+  background-color: rgb(141, 173, 248);
+  color: white;
+  text-align: center;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #ccf1ff;
+}
+
+tr:nth-child(odd) {
+  background-color: #18cfeb;
+}
+
+tr:hover {
+  background-color: #2e66c6;
+}
+
+.id {
+  font-weight: bold;
+  vertical-align: text-top;
+}
+
+.one {
+  background-color: rgb(215, 49, 12);
+  border: 1px solid rgb(215, 49, 12);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.two {
+  background-color: rgb(231, 191, 32);
+  border: 1px solid rgb(231, 191, 32);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.three {
+  background-color: rgb(14, 181, 92);
+  border: 1px solid rgb(14, 181, 92);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.four {
+  background-color: rgb(141, 173, 248);
+  border: 1px solid rgb(141, 173, 248);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.five {
+  background-color: rgb(55, 55, 186);
+  border: 1px solid rgb(55, 55, 186);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.size {
+  background-color: rgb(141, 173, 248);
+  border: 1px solid rgb(141, 173, 248);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.category {
+  font-weight: bold;
+  vertical-align: text-top;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.created {
+  font-weight: bold;
+}
+
+.time {
+  color: rgb(123, 123, 123);
+}

@@ -1,0 +1,57 @@
+table {
+  border: 3px solid #000000;
+  border-collapse: collapse;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+}
+
+.week,
+.week1 {
+  border-right: 3px solid;
+  border-left: 3px solid;
+  text-align: center;
+}
+
+.week {
+  border-bottom: dotted 2px;
+}
+
+.couple {
+  border-bottom: hidden;
+}
+
+.aud1 {
+  border-bottom: hidden;
+  border-right: dashed 2px;
+}
+
+.aud2,
+.aud {
+  border-right: dashed 2px;
+  text-align: center;
+}
+
+.group {
+  background-color: #dae1f8;
+  width: 25px;
+}
+
+.teacher {
+  width: 300px;
+}
+
+.cabinet {
+  width: 50px;
+}
+
+.KI {
+  background-color: rgb(177, 243, 186);
+}
+
+caption {
+  font-weight: bold;
+}
