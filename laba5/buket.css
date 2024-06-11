@@ -1,0 +1,40 @@
+.frame {
+    position: relative;
+    margin: 80px;
+    width: 200px;
+    height: 200px;
+  }
+  .frame::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 3px;
+    bottom: 3px;
+    border: 8px solid rgb(235, 143, 143);
+    transform: rotate(45deg);
+    z-index: -2;
+    border-left: none;
+    border-right: none;
+  }
+  .frame::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 3px;
+    bottom: 3px;
+    border: 8px solid rgb(235, 143, 143);
+    transform: rotate(45deg);
+    z-index: 1;
+    border-top: none;
+    border-bottom: none;
+  }
+  .frame img {
+    border: 6px solid rgb(198, 193, 193);
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  

@@ -1,0 +1,82 @@
+*{  
+    margin: 0; 
+    padding: 0;     
+    border: 0; 
+    outline: 0;     
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    scroll-behavior: smooth; 
+}  
+     
+:focus,:active{outline: none;}  
+a:focus,a:active{outline: none;}  
+     
+nav,footer,header,aside{display: block;}  
+     
+:root{  
+    --boss: rgb(160, 160, 160);  
+    --colors: rgb(210, 198, 198);  
+}   
+     
+input,button,textarea{font-family:inherit;}  
+     
+input::-ms-clear{display: none;}  
+button{cursor: pointer;}  
+button::-moz-focus-inner {padding:0;border:0;}  
+a, a:visited{text-decoration: none;}  
+a:hover{text-decoration: none;}  
+ul li{list-style: none;}  
+img{vertical-align: top;}  
+     
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+.modal{
+    width: 700px;
+    background-color: rgb(253, 253, 253);
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-bottom: 20px;
+    
+    
+}
+.modal_heder{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.modal-body{
+    background-color: rgb(181, 180, 179);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+}
+.form_input {
+    background-color: rgb(167, 218, 196);
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.form_label{
+    margin-bottom: 5px;
+}
+.modal_buttun{
+    background-color: transparent;
+    padding: 8px 15px;
+    border: 2px solid #1fb7f9;
+    color:#1fb7f9 ;
+    border-radius: 30px;
+
+}
+.form_select{
+    width: 500px ;
+    border: 1px solid #000;
+    margin: 15px 0;
+
+}

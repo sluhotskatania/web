@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let now = new Date();
+        let hour = now.getHours();
+        
+        switch (true) {
+            case (hour >= 23 || hour < 5):
+                console.log("Доброї ночі");
+                break;
+            case (hour >= 5 && hour < 11):
+                console.log("Доброго ранку");
+                break;
+            case (hour >= 11 && hour < 17):
+                console.log("Доброго дня");
+                break;
+            default:
+                console.log("Доброго вечора");
+        }
+        
+            </script>
+</body>
+</html>

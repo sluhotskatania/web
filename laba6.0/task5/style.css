@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  border-left: 15px dotted blue;
+  border-right: 15px solid blue;
+  border-top: 15px dashed blue;
+  border-bottom: 15px solid blue;
+  border-radius: 50%;
+  animation: rotate 7s linear infinite;
+}
+
+.point {
+  width: 0px;
+  border: 25px solid black;
+  border-color: blue transparent transparent blue;
+  position: absolute;
+  margin-top: 415px;
+  margin-left: 53px;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+  
+  

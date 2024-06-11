@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let x = 1;
+let y = 2;
+
+let res1 = String(x) + String(y);
+console.log ("Додавання рядків");
+console.log(res1);
+console.log(typeof res1);
+
+let res2 = x !== y || x > y;
+res2 = String(res2) + y;
+console.log ("Перевірка на рівність");
+console.log(res2); 
+console.log(typeof res2); 
+
+
+let res3 = x !== y && x < y;
+console.log ("Порівняння чисел");
+console.log(res3); 
+console.log(typeof res3); 
+
+
+let res4 = x / 0;
+console.log ("Ділення на 0");
+console.log(parseInt("res4"));
+console.log(typeof res4);
+
+    </script>
+</body>
+</html>

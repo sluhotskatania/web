@@ -1,0 +1,72 @@
+.container {
+    margin: 10px;
+    width: 200px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px 3px rgb(107, 107, 109);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.cont {
+    border-bottom: 4px solid rgb(206, 10, 121);
+}
+
+.cont2 {
+    border-bottom: 4px solid rgb(184, 108, 9);
+}
+
+.cont3 {
+    border-bottom: 4px solid rgb(72, 90, 139);
+}
+
+.cont4 {
+    border-bottom: 4px solid rgb(10, 206, 43);
+}
+
+.button1 {
+    background-color: rgb(206, 10, 121);
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.button2 {
+    background-color: rgb(184, 108, 9);
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.button3 {
+    background-color: rgb(72, 90, 139);
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.button4 {
+    background-color: rgb(10, 206, 43);
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+h5 {
+    color: grey;
+    line-height: 1px;
+}
+
+.container:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}

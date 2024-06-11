@@ -1,0 +1,17 @@
+nav{
+    float: right;
+    background-color: rgb(228, 230, 222);
+    width: 45%;
+    height: 400px;
+    text-align: center;
+}
+header, main, aside, footer{
+    width: 55%;
+    height: 100px;
+}
+header, aside{
+    background-color:  rgb(246, 249, 238);
+}
+main, footer{
+    background-color:  rgb(216, 216, 216);
+}

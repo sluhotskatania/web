@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Випадаючі списки Країна та Місто</title>
+    <style>
+        /* Стилі для рамки */
+        .container {
+            border: 1px solid black; /* чорна рамка */
+            padding: 10px; /* внутрішні відступи */
+            display: inline-block; /* для відповідного розміру */
+        }
+
+        /* Відступи для полів */
+        select {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="country">Виберіть країну:</label>
+        <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="ger">Germany</option>
+            <option value="ukr">Ukraine</option>
+        </select>
+
+        <label for="cities">Виберіть місто:</label>
+        <select name="cities" id="cities">
+            <!-- Міста будуть динамічно заповнюватися тут -->
+        </select>
+
+        <p id="selection"></p>
+    </div>
+
+    <script>
+        // Отримуємо елементи випадаючих списків та параграф для відображення вибраних значень
+        const countrySelect = document.getElementById('country');
+        const citySelect = document.getElementById('cities');
+        const selectionParagraph = document.getElementById('selection');
+
+        // Об’єкт з містами для кожної країни
+        const citiesByCountry = {
+            usa: ['New-York', 'Washington', 'Boston', 'Chicago'],
+            ger: ['Berlin', 'Munich', 'Frankfurt'],
+            ukr: ['Kyiv', 'Lviv', 'Odessa']
+        };
+
+        // Функція для оновлення списку міст на основі вибраної країни
+        function updateCities() {
+            // Отримуємо вибрану країну
+            const selectedCountry = countrySelect.value;
+            // Отримуємо відповідні міста
+            const cities = citiesByCountry[selectedCountry] || [];
+            
+            // Очищаємо опції у списку міст
+            citySelect.innerHTML = '';
+            
+            // Заповнюємо список міст новими опціями
+            cities.forEach(city => {
+                const option = document.createElement('option');
+                option.value = city;
+                option.textContent = city;
+                citySelect.appendChild(option);
+            });
+
+            // Оновлюємо відображення вибраних значень
+            updateSelection();
+        }
+
+        // Функція для оновлення тексту з вибраними країною та містом
+        function updateSelection() {
+            const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
+            const selectedCity = citySelect.options[citySelect.selectedIndex]?.text || '';
+            selectionParagraph.textContent = `${selectedCountry},${selectedCity}`;
+        }
+
+        // Додаємо обробники подій для випадаючих списків
+        countrySelect.addEventListener('change', updateCities);
+        citySelect.addEventListener('change', updateSelection);
+
+        // Ініціалізуємо список міст при завантаженні сторінки
+        document.addEventListener('DOMContentLoaded', updateCities);
+    </script>
+</body>
+</html>
